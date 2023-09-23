@@ -752,8 +752,8 @@ HERO
 .Section-Hero .Luigi-Buttons>a:nth-child(2) {
     background-color: #ED0605;
     background-color: #37013d;
-    background: linear-gradient(180deg, #0cb24c 0%, #006b29 100%);
-    border: 1px solid #0cb24c;
+    background: linear-gradient(180deg, #b20c0c 0%, #6b0007 100%);
+    border: 1px solid #b20c28;
     font-weight: 800;
 }
 
@@ -864,11 +864,13 @@ section {}
 }
 
 .Section-Bg-Image>img {
-    width: 120%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+    background-image: url('./../../picz/X-09.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    color: #000000;
+
+    position: relative;
 }
 
 .Section-Bg-Video>video {
@@ -880,7 +882,14 @@ section {}
 }
 
 .Section-Hero .Section-Bg-Image img {
-    opacity: 0.085;
+    opacity: 0.000085;
+    background-image: url('./../../picz/X-09.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+
+    position: relative;
 }
 
 .Section-Bg-Video {}

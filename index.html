@@ -22,8 +22,28 @@
     <title>LARP</title>
     <script defer="defer" src="/static/js/main.22773b82.js"></script>
     <link href="/static/css/main.23953276.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/App.css">
 
+    <style>
+        .Section-Hero .Luigi-Buttons>a:nth-child(1),
+.Section-Hero .Luigi-Buttons>a:nth-child(4) {
+background-color: #FFFFFF;
+border: 1px solid #FFFFFF;
+color: #000000;
+}
 
+.Section-Hero .Luigi-Buttons>a:nth-child(1) {
+display: none !important;
+}
+
+.Section-Hero .Luigi-Buttons>a:nth-child(2) {
+background-color: #ED0605;
+background-color: #37013d;
+background: linear-gradient(180deg, #b20c0c 0%, #6b0007 100%);
+border: 1px solid #b20c28;
+font-weight: 800;
+}
+    </style>
     <style type="text/css">
         @font-face {
             font-weight: 400;
@@ -65,7 +85,7 @@
 
                                 <div class="Luigi-Logo-Words"><img src="./picz/X-08.png" alt="logo"></div>
                             </a><a href="https://etherscan.io/token/"
-                                target="_blank">Buy Now</a></div>
+                                target="_blank" style="background-color: red !important;">Buy Now</a></div>
                         <div class="Header-Right">
 
                             <nav class="Header-Nav">
@@ -110,19 +130,31 @@
                         <div class="Luigi-Buttons"><a href="https://t.me/LARPCoinERC" target="_blank">Join
                                 Telegram</a><a
                                 href="https://pancakeswap.finance/swap?outputCurrency="
-                                target="_blank">Buy on PancakeSwap</a><a
+                                target="_blank" style="background-color: red !important;">Buy on PancakeSwap</a>
+                                <a
                                 href="https://app.uniswap.org/#/swap?inputCurrency=ETH&amp;outputCurrency="
-                                target="_blank">Buy on Uniswap</a><a href="#payment-options">Payment Options</a></div>
+                                target="_blank"   style="color: red !important;" >Buy on Uniswap</a>
+                                <a href="#payment-options">Payment Options</a></div>
                     </div>
                 </div>
-            </section>
+            </section><style>
+                .Section-Hero {
+                    background-image: url('./picz/X-09.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+                    height: 100vh !important;
+    position: relative;
+                }
+            </style>
             <section id="hero" class="Section-Hero">
-                <div class="Section-Bg-Image"><img src="./picz/X-09.png" alt="logo"></div>
+               
                 <div class="App-Container">
                     <div class="Section-Content">
                         <div class="Flexbox">
                             <div class="Flexbox-Left">
-                                <h1><img src="./picz/x1.png" alt="Luigi's Time is here"><img
+                                <h1 style="display: none;" ><img src="./picz/x1.png" alt="Luigi's Time is here"><img
                                         style="height: 300px; width: auto;" src="./picz/x2 copy.png"
                                         alt="Rule the Crypto Kingdom"></h1>
                                 <p>Introducing LARP, the vibrant memecoin merging the legendary Crypto Punk NFTs
@@ -139,13 +171,14 @@
                                             src="data:image/png;base64,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"
                                             alt="logo"></a>
                                 </div>
+                             
                                 <div class="Luigi-Buttons"><a href="https://t.me/LARPCoinERC" target="_blank">Join
                                         Telegram</a><a
                                         href="https://etherscan.io/token/"
-                                        target="_blank">Buy on Uniswap</a><a href="#volt">Volt⚡️Change Swap</a><a
+                                        target="_blank"   style="background-color: red !important;" >Buy on Uniswap</a><a href="#volt">Volt⚡️Change Swap</a><a
                                         href="#payment-options">Chart</a></div>
                             </div>
-                            <div class="Flexbox-Right"><img src="./picz/x2 copy.png" alt="logo"></div>
+                            <div style="display: none;" class="Flexbox-Right"><img src="./picz/x2 copy.png" alt="logo"></div>
                         </div>
                     </div>
                 </div>
@@ -195,7 +228,7 @@
                 <div class="Section-Border "
                     style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAABTklEQVR4AWJwL/ChGAPYnQPNhKIAAMNVShKJiHBfNmADAQGBQCAIBEEQghAu9SbfGDDbtqpzz7k4/wP8PswwC/EKgXkHwFtSEOa+N48OQhMLv7dAMwoILSz93xKtSkFoY+X+VmhXAkIHa4+3RicoCF1sPN8G3SAg9LD1elv0XgKhj51w7dB/CoQB9sK3x+AhEIY4qK4DhneBMMJR9R0x+hOEMU7idcL4RxAmOIvfGZMvIExxka4Lpp8gFCilr0TRwE19ujXUrAzKoAzKoERlUAZdca0LqESBD9bsnABgIACB4OqPiNNwEtPnf8YBJQykxqSKlSp6qeqpqnConLOxEJovbE6FBh4bnKEJzCZ5CAkYWoQYBbHOfaD5FJpewNe8CUQojtFgCCsBnp4HGh849ysvj30gBN4K4EOXALsoUqcJCLWsAzuIStNKVJvmAgBgvSfoAPxfAAAAAABJRU5ErkJggg==&quot;);">
                 </div>
-                <div class="Section-Border-Image"><img src="./pirara.png" alt="logo"></div>
+                <div class="Section-Border-Image"><img src="./picz/X-05.png" alt="logo"></div>
                 <div class="Section-Border-Image up-down"><img style="margin-left: rem !important;" src="./picz/Vitalik.png"
                         alt="logo" class="Animation-UpDown"></div>
                 <div class="Section-Border-Image"><img src="./picz/shib.png" alt="logo"></div>
@@ -244,7 +277,7 @@
             <section id="roadmap" class="Section-Roadmap"
                 style="background-image:url(./picz/adrian-czyzewski-assassin-s-creed-odyssey-pixel-art.jpg); background-repeat:no-repeat; background-size: cover !important; background-attachment: fixed;">
                 <div class="Section-Border"
-                    style="background-image: url(./picz/adrian-czyzewski-assassin-s-creed-odyssey-pixel-art.jpg)">
+                style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAABTklEQVR4AWJwL/ChGAPYnQPNhKIAAMNVShKJiHBfNmADAQGBQCAIBEEQghAu9SbfGDDbtqpzz7k4/wP8PswwC/EKgXkHwFtSEOa+N48OQhMLv7dAMwoILSz93xKtSkFoY+X+VmhXAkIHa4+3RicoCF1sPN8G3SAg9LD1elv0XgKhj51w7dB/CoQB9sK3x+AhEIY4qK4DhneBMMJR9R0x+hOEMU7idcL4RxAmOIvfGZMvIExxka4Lpp8gFCilr0TRwE19ujXUrAzKoAzKoERlUAZdca0LqESBD9bsnABgIACB4OqPiNNwEtPnf8YBJQykxqSKlSp6qeqpqnConLOxEJovbE6FBh4bnKEJzCZ5CAkYWoQYBbHOfaD5FJpewNe8CUQojtFgCCsBnp4HGh849ysvj30gBN4K4EOXALsoUqcJCLWsAzuIStNKVJvmAgBgvSfoAPxfAAAAAABJRU5ErkJggg==&quot;);"">
                 </div>
                 <div class="App-Container">
                     <div class="Section-Content">
@@ -255,18 +288,13 @@
                                 <div class="Panel-Dot Panel-Dot-2"></div>
                                 <div class="Panel-Dot Panel-Dot-3"></div>
                                 <div class="Panel-Dot Panel-Dot-4"></div>
-                                <div class="Panel-Content"><img src="./mario-blocks-02.gif" alt="logo">
-                                    <h3>Phase 1</h3>
+                                <div class="Panel-Content"><img src="./picz/pepe.png" alt="logo">
+                                    <h2>Phase 1</h2>
                                     <ul>
-                                        <li>Contract Deployment</li>
-                                        <li>Website &amp; Telegram Launch</li>
-                                        <li>Social Media Launch</li>
-
-                                        <li>Community Building</li>
-
-                                        <li>Trending List &amp; Ad Buys</li>
-
-                                        <li>DexTools Update</li>
+                                        <li>Token Launch: Launch Larp token and establish initial liquidity.</li>
+                                        <li>Community Engagement: Actively engage with the community on social media platforms, forums, and Discord/Telegram.</li>
+                                        <li>Educational Initiatives: Create educational content to inform the community about Larp's vision and technology.</li>
+                                        <li>CoinGecko and CoinMarketCap Listing: Work towards getting Larp token listed on CoinGecko and CoinMarketCap.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -275,15 +303,13 @@
                                 <div class="Panel-Dot Panel-Dot-2"></div>
                                 <div class="Panel-Dot Panel-Dot-3"></div>
                                 <div class="Panel-Dot Panel-Dot-4"></div>
-                                <div class="Panel-Content"><img src="./token.gif" alt="logo">
-                                    <h3>Phase 2</h3>
+                                <div class="Panel-Content"><img src="./picz/Doge.png" alt="logo">
+                                    <h2>Phase 2</h2>
                                     <ul>
-                                        <li>Team Buyback &amp; Burn Event</li>
-                                        <li>CG &amp; CMC Listings</li>
-                                        <li>Viral Twitter Contest &amp; Twiter Spaces Event</li>
-                                        <li>TG Caller Partnerships &amp; AMAs</li>
-                                        <li>Twitter Influencer Partnerships</li>
-
+                                        <li>Community Building: Foster a strong and vibrant community through events, contests, and AMAs.</li>
+                                        <li>Token Utility: Explore additional use cases for Larp within the ecosystem to incentivize holding.</li>
+                                        <li>Marketing Campaigns: Launch targeted marketing campaigns to expand the Larp user base.</li>
+                                        <li>CoinGecko and CoinMarketCap Listings: Continue efforts to secure listings on major tracking platforms.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -292,18 +318,33 @@
                                 <div class="Panel-Dot Panel-Dot-2"></div>
                                 <div class="Panel-Dot Panel-Dot-3"></div>
                                 <div class="Panel-Dot Panel-Dot-4"></div>
-                                <div class="Panel-Content"><img src="./er.gif" style=" margin-top: -4rem; height: 170px !important;" alt="logo">
-                                    <h3>Phase 3</h3>
+                                <div class="Panel-Content"><img src="./picz/elon.png" alt="logo">
+                                    <h2>Phase 3</h2>
                                     <ul>
-                                        <li>Banner Ads</li>
-
-                                        <li>LARP &amp; Utility Discussions</li>
-                                        <li>International AMAs &amp; Community Outreach</li>
-                                        <li>First CEX Listing</li>
-
-                                        <li>Phase 4 Gameplan Announcement</li>
+                                        <li>DApp Development: Begin developing decentralized applications or partnerships to showcase Larp's capabilities.</li>
+                                        <li>Governance Implementation: Introduce community governance mechanisms for decision-making.</li>
+                                        <li>Liquidity Expansion: Work on partnerships and exchanges to increase liquidity.</li>
+                                        <li>Regular Reporting: Provide transparent reports to the community regarding project updates and financials.</li>
                                     </ul>
+                                
                                 </div>
+                            </div> <br>
+                        
+                        </div>    
+                        <div class="Panel" style="width: 35%;">
+                            <div class="Panel-Dot Panel-Dot-1"></div>
+                            <div class="Panel-Dot Panel-Dot-2"></div>
+                            <div class="Panel-Dot Panel-Dot-3"></div>
+                            <div class="Panel-Dot Panel-Dot-4"></div>
+                            <div class="Panel-Content"><img src="./picz/Vitalik.png" alt="logo">
+                                <h3 style="word-break: break-all;" >Phase 4</h3>
+                                <ul>
+                                    <li>Strengthened Governance: Continue to improve and iterate upon the governance system, allowing the community to have a greater say in the project's future.</li>
+                                    <li>Strategic Collaborations: Seek partnerships and collaborations within the crypto and meme space to further establish Larp's presence.</li>
+                                    <li>Utility Expansion: Explore additional use cases for Larp token within the broader crypto ecosystem.</li>
+                                    <li>Global Adoption: Aim to make Larp a recognized and widely used token in the crypto community.</li>
+                                </ul>
+                            
                             </div>
                         </div>
                     </div>
@@ -379,7 +420,7 @@
             </div>
             </section>
 
-            <footer>
+            <footer style="background-color: #2ab1bd;" >
                 <div class="Section-Border"
                     style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAABhElEQVR4AWJwL/ABtGfWCg1FQRBd3N31Z9NBlS4VVGlwb3B3d+dPhlncdeIpTvS+2VPu7v032LCAo8j6v8ymtVMGDj+3xVSIEkGCNwSjLgRYBguHCD4h5GeiIgRYJjat0wt/Cc/42YgKAZbFYmGCHxL2ZyIixPAc0k3wS7pJjlQIB5bL0EGCPzLoGRIhXFs+A8cI/smYZ/1LiCGFZIJAhGcV/kkIB1bMh2cJxMx69q+E+FAZWSKIEJ5d9iMh7FkFD68TRJh1r/WlEA9Vk22CKLFNqj8Uom0d/zwgiDIHXvuVEDatkX+cEMSIE3dwF+OXVnJBEGMu3MWFbgjihBuTBgpIC6WF0kJpoRiRFkoLXTs6IUHboGpjTNVYqRo9U7WeqlbYVM25algw1fiiGqdMNeCpBk5TjcCqkdxUSwLV0sJEaxTZWuc7oYHHRZMCz/LM74UEqzjVatBUy0rV8vQjoY6P17lavIbX+lhIsPBWLeBNdSWguqIwyaWJAHd4FApIQgW4yy1jHLHQhlGV4AAAAABJRU5ErkJggg==&quot;);">
                 </div>
@@ -387,7 +428,7 @@
                    
                         <div class=" Section-Content">
                             <div class="Luigi-Logo">
-                                <div class="Luigi-Logo-Symbol"><img src="./Logo-01.png" alt="logo">
+                                <div style="display: none;" class="Luigi-Logo-Symbol"><img src="./Logo-01.png" alt="logo">
                                 </div>
                                 <div class="Luigi-Logo-Words"><img src="./picz/X-08.png"
                                         alt="logo"></div>
