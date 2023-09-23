@@ -316,7 +316,7 @@ p {
 .Header-Nav>ul>li:last-child>a {
     background-color: #ed0605;
     background-color: #37013d;
-    background: linear-gradient(180deg, #0cb24c, #006b29);
+    background: linear-gradient(180deg, red, red);
     border-radius: 16px;
     font-weight: 800;
     margin-left: 24px;
@@ -733,8 +733,8 @@ background-attachment: fixed;
 .Section-Hero .Luigi-Buttons>a:nth-child(2) {
     background-color: #ed0605;
     background-color: #37013d;
-    background: linear-gradient(180deg, #0cb24c, #006b29);
-    border: 1px solid #0cb24c;
+    background: linear-gradient(180deg, red, red);
+    border: 1px solid red;
     font-weight: 800
 }
 
@@ -1053,7 +1053,7 @@ background-attachment: fixed;
 
 .Section-About .Luigi-Buttons>a:first-child {
     background-color: #37013d;
-    background: linear-gradient(180deg, #0cb24c, #006b29);
+    background: linear-gradient(180deg, red, red);
     background: initial;
     background-color: #000;
     border: 2px solid #000
@@ -1655,7 +1655,7 @@ footer .Section-Content>a:hover {
 
 .Coming-Soon-Content .Luigi-Buttons>a:nth-child(2) {
     background-color: #c201a7;
-    background: linear-gradient(180deg, #0cb24c, #006b29);
+    background: linear-gradient(180deg, red, red);
     background: linear-gradient(180deg, #02d052, #056128);
     color: #fff
 }
@@ -1706,7 +1706,7 @@ footer .Section-Content>a:hover {
 
 @media (max-width:1067px) {
     .Header-Left>a:nth-child(2) {
-        background: linear-gradient(180deg, #0cb24c, #006b29);
+        background: linear-gradient(180deg, red, red);
         border-radius: 16px;
         color: #fff;
         display: inline-block;
